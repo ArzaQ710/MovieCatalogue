@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Katalog Film</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv_show">Serial TV</string>
+    <string name="synopsis">Sinopsis</string>
+    <string name="_10">/ 10</string>
+    <string name="release_date">Tanggal Rilis:</string>
+    <string name="content_rating">Rating Konten:</string>
+    <string name="duration">Durasi</string>
+    <string name="categories">Kategori:</string>
+    <string name="choose_language">Pilih Bahasa</string>
+    <string name="favorite">Favorit</string>
+    <string name="added">Ditambahkan ke Favorit</string>
+    <string name="add_failed">Gagal Menambahkan ke Favorite</string>
+    <string name="deleted">Dihapus dari Favorite</string>
+    <string name="delete_fail">Gagal Menghapus dari Favorite</string>
+    <string name="film_image">Gambar Film</string>
+    <string name="daily_release_reminder">Pengingat Rilis Harian</string>
+    <string name="return_to_app_reminder">Pengingat Kembali ke Aplikasi</string>
+    <string name="setting">Pengaturan</string>
+    <string name="daily_release_reminder_on">Pengingat Rilis Harian Hidup</string>
+    <string name="return_to_app_reminder_on">Pengingat Kembali ke Aplikasi Hidup</string>
+    <string name="daily_release_reminder_off">Pengingat Rilis Harian Mati</string>
+    <string name="return_to_app_reminder_off">Pengingat Kembali ke Aplikasi Mati</string>
+    <string name="search_hint">Cari</string>
+    <string name="dailyReleaseNotificationTitle">Kami Punya Berita Untuk Mu di Jam 8!</string>
+    <string name="dailyReleaseNotificationMessage">Pastikan Terhubung ke Internet</string>
+    <string name="search">Cari</string>
+</resources>

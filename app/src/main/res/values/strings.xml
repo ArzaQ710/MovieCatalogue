@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv_show">TV Show</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="_10">/ 10</string>
+    <string name="release_date">Release Date:</string>
+    <string name="content_rating">Content Rating:</string>
+    <string name="duration">Duration</string>
+    <string name="categories">Categories:</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="favorite">Favorite</string>
+    <string name="added">Added to Favorite</string>
+    <string name="add_failed">Failed to Add to Favorite</string>
+    <string name="deleted">Deleted from Favorite</string>
+    <string name="delete_fail">Failed to Delete from Favorite</string>
+    <string name="film_image">Film\'s Image</string>
+    <string name="daily_release_reminder">Daily Release Reminder</string>
+    <string name="return_to_app_reminder">Return to App Reminder</string>
+    <string name="setting">Setting</string>
+    <string name="daily_release_reminder_on">Daily Release Reminder On</string>
+    <string name="return_to_app_reminder_on">Return to App Reminder On</string>
+    <string name="daily_release_reminder_off">Daily Release Reminder Off</string>
+    <string name="return_to_app_reminder_off">Return to App Reminder Off</string>
+    <string name="search_hint">Search</string>
+    <string name="search">Search</string>
+    <string name="dailyReleaseNotificationTitle">We Got Info for You at 8 O\'clock!</string>
+    <string name="dailyReleaseNotificationMessage">Connect to Internet Next Time</string>
+</resources>

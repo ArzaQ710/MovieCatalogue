@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/movieTvShowDetailProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="16dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_dtl_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginTop="@dimen/m8Dp"
+            android:layout_marginEnd="@dimen/m16Dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dtl_name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/m16Dp"
+            android:layout_marginBottom="@dimen/m8Dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dtl_name">
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- imdb-icon -->
+        <ImageView
+            android:id="@+id/iv_imdb"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_dtl_name"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginEnd="@dimen/m16Dp"
+            android:layout_toEndOf="@id/cv_img"
+            android:src="@drawable/imdb_icon"
+            app:layout_constraintStart_toEndOf="@id/cv_img"
+            app:layout_constraintTop_toTopOf="@+id/cv_img"
+            tools:ignore="ContentDescription" />
+
+        <!-- rating -->
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dtl_name"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/iv_imdb"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/iv_imdb"
+            app:layout_constraintTop_toTopOf="@id/iv_imdb"
+            tools:text="8.5" />
+
+        <!-- out-of -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dtl_name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/tv_rating"
+            android:text="@string/_10"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tv_rating"
+            app:layout_constraintTop_toTopOf="@id/tv_rating" />
+
+        <!-- release-date -->
+        <TextView
+            android:id="@+id/tv_release_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_imdb"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/cv_img"
+            android:text="@string/release_date"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cv_img"
+            app:layout_constraintTop_toBottomOf="@id/iv_imdb" />
+
+        <TextView
+            android:id="@+id/tv_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_release_title"
+            android:layout_toEndOf="@id/cv_img"
+            app:layout_constraintStart_toStartOf="@id/tv_release_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_release_title"
+            tools:text="27 April 2018 (USA)" />
+
+        <!-- categories -->
+        <TextView
+            android:id="@+id/tv_categories_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_release"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/cv_img"
+            android:text="@string/categories"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/cv_img"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release" />
+
+        <TextView
+            android:id="@+id/tv_categories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_categories_title"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/cv_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_categories_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_categories_title"
+            tools:text="Action, Adventure, Sci-Fi" />
+
+        <TextView
+            android:id="@+id/tv_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_img"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginTop="@dimen/m8Dp"
+            android:layout_marginEnd="@dimen/m8Dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/synopsis"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/cv_img"
+            app:layout_constraintTop_toBottomOf="@id/cv_img" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tv_dtl_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_synopsis"
+            android:layout_marginStart="@dimen/m16Dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="@dimen/m16Dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="fill_horizontal"
+            app:layout_constraintStart_toStartOf="@id/tv_synopsis"
+            app:layout_constraintTop_toBottomOf="@id/tv_synopsis" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

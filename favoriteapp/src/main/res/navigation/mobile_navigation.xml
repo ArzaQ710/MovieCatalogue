@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_movie">
+
+    <fragment
+        android:id="@+id/navigation_movie"
+        android:name="arzaq.azmi.favoriteMovie.ui.movie.FavoriteMovieFragment"
+        android:label="@string/title_movie"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_navigation_movie_to_detail"
+            app:destination="@id/detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_tv_show"
+        android:name="arzaq.azmi.favoriteMovie.ui.tvShow.FavoriteTvShowFragment"
+        android:label="@string/title_tv_show"
+        tools:layout="@layout/fragment_tv_show">
+        <action
+            android:id="@+id/action_navigation_tv_show_to_detail"
+            app:destination="@id/detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail"
+        android:name="arzaq.azmi.favoriteMovie.ui.detail.FavoriteDetailFragment"
+        tools:layout="@layout/fragment_detail" />
+
+</navigation>
