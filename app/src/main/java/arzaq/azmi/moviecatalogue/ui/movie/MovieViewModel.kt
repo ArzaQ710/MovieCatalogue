@@ -13,7 +13,7 @@ import org.json.JSONObject
 import com.androidnetworking.interfaces.JSONObjectRequestListener
 
 
-class MovieViewModel : ViewModel() {
+open class MovieViewModel : ViewModel() {
 
     private val data by lazy {
         MutableLiveData<ArrayList<DataModelFilm>>()

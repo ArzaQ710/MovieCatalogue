@@ -52,7 +52,7 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragm
         return inflater.inflate(R.layout.fragment_detail, container, false)
     }
 
